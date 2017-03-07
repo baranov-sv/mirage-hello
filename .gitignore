@@ -1,0 +1,10 @@
+/_build/**/*
+/.mirage.config
+/Makefile
+/_build/_digests
+/key_gen.ml
+/main.ml
+/mirage-unikernel-hello-macosx.opam
+/myocamlbuild.ml
+/hello
+*.native
