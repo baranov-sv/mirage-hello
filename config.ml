@@ -2,7 +2,7 @@ open Mirage
 
 let main =
   foreign
-    ~packages:[package "duration"; package "lwt.ppx"]
+    ~packages:[package "duration"]
     "Unikernel.Hello" (time @-> job)
 
 let () =

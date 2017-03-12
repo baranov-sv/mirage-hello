@@ -4,7 +4,7 @@ module Hello (Time : Mirage_time_lwt.S) = struct
       | 0 -> Lwt.return_unit
       | n ->
          Logs.info (fun f -> f "hello");
-         Time.sleep_ns (Duration.of_sec 5) >> loop (n-1)
+         Time.sleep_ns (Duration.of_sec 5) >> loop (n - 1)
     in
     loop 1000
 end
