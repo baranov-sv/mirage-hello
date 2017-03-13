@@ -10,5 +10,5 @@ module Hello (Time : Mirage_time_lwt.S) = struct
          Logs.info (fun f -> f "hello from instance %i iteration %i" n (iterations - c));
          Time.sleep_ns (Duration.of_sec n) >> loop (c - 1) n
     in
-    Lwt.join @@ ListLabels.map ~f:(loop iterations) durations
+    ListLabels.map ~f:(loop iterations) durations |> Lwt.join
 end
