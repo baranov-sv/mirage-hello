@@ -1,1 +1,1 @@
-<**/*.ml> or <**/*.mli>: package(lwt.ppx)
+<**/*.ml> or <**/*.mli>: package(lwt_ppx)
